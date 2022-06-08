@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/Go_Home" android:title="홈으로 이동"/>
+    <item android:id="@+id/Quiz_Button" android:title="퀴즈(객관식)"/>
+    <item android:id="@+id/Quiz_typing" android:title="퀴즈(주관식)"/>
+    <item android:id="@+id/Quiz_Block" android:title="블록 코딩"/>
+
+</menu>

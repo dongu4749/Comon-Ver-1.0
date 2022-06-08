@@ -1,0 +1,12 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        app:key="Comon_DailyKnowledge"
+        app:title="일일지식">
+
+        <Preference
+            app:key="DailyKnowledge"
+            app:title="소프트웨어공학이란?"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

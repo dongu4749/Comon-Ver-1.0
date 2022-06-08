@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 문제와 정답제출 버튼 -->
+
+    <TextView
+        android:id="@+id/textViewObjectQuiz_block_coding_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text='문자열을 출력해보자.'
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewObjectQuiz_block_coding_2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewObjectQuiz_block_coding_2" />
+
+    <TextView
+        android:id="@+id/textViewObjectQuiz_block_coding_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text='"Hello world!"'
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewObjectQuiz_block_coding_1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewObjectQuiz_block_coding_1" />
+
+    <TextView
+        android:id="@+id/textViewObjectQuiz_block_coding_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:text="JAVA 언어로"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 큰 리니어레이아웃 -->
+
+
+    <Button
+        android:id="@+id/buttonCheckQuiz"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_shape_primary"
+        android:text="정답 제출"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+        app:layout_constraintVertical_bias="0.974" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="411dp"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView
+            android:id="@+id/toolbar_title_block1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="블록 코딩"
+            android:textSize="20sp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="411dp"
+        android:layout_height="351dp"
+        android:layout_marginBottom="124dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/my_toolbar"
+        app:layout_constraintVertical_bias="0.878">
+
+        <!-- 끌어가야 하는 부분 -->
+
+        <LinearLayout
+            android:layout_width="352dp"
+            android:layout_height="147dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="219dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- 끌어다 놓아야 하는 부분 -->
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="public class HelloWorld { " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/code_top_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/answer_layout_1"
+                    android:layout_width="52dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_block_1"
+                        android:layout_width="40dp"
+                        android:layout_height="29dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/button_shape_primary"
+                        android:backgroundTint="#DADADA"
+                        android:text="1"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/answer_layout_2"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_block_2"
+                        android:layout_width="49dp"
+                        android:layout_height="29dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/button_shape_primary"
+                        android:backgroundTint="#DADADA"
+                        android:text="2"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/answer_layout_3"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_block_3"
+                        android:layout_width="40dp"
+                        android:layout_height="32dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/button_shape_primary"
+                        android:backgroundTint="#DADADA"
+                        android:text="3"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/answer_layout_4"
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_block_4"
+                        android:layout_width="30dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dialog_background"
+                        android:backgroundTint="#DADADA"
+                        android:text="4"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/answer_layout_5"
+                    android:layout_width="79dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_block_5"
+                        android:layout_width="30dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dialog_background"
+                        android:backgroundTint="#DADADA"
+                        android:text="5"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:text="{" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/code_bottom_linear"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/answer_layout_6"
+                    android:layout_width="7dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_block_6"
+                        android:layout_width="30dp"
+                        android:layout_height="27dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dialog_background"
+                        android:backgroundTint="#DADADA"
+                        android:text="6"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/answer_layout_7"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_block_7"
+                        android:layout_width="35dp"
+                        android:layout_height="28dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dialog_background"
+                        android:backgroundTint="#DADADA"
+                        android:text="7"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/answer_layout_8"
+                    android:layout_width="23dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_block_8"
+                        android:layout_width="35dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dialog_background"
+                        android:backgroundTint="#DADADA"
+                        android:text="8"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/answer_layout_9"
+                    android:layout_width="23dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_block_9"
+                        android:layout_width="59dp"
+                        android:layout_height="31dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dialog_background"
+                        android:backgroundTint="#DADADA"
+                        android:text="9"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7_4line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="   }" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView10_5line"
+                    android:layout_width="368dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="}" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="376dp"
+            android:layout_height="159dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:textAllCaps="false">
+
+                <Button
+                    android:id="@+id/button_answer_1_system"
+                    android:layout_width="58dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape_primary"
+                    android:backgroundTint="#ECF5F8"
+                    android:text="system."
+                    android:textAllCaps="false"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/button_answer_2_out"
+                    android:layout_width="58dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape_primary"
+                    android:backgroundTint="#ECF5F8"
+                    android:text="out."
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/button_answer_3_println"
+                    android:layout_width="58dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape_primary"
+                    android:backgroundTint="#ECF5F8"
+                    android:text="println"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_answer_4_main"
+                    android:layout_width="58dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape_primary"
+                    android:backgroundTint="#ECF5F8"
+                    android:text="main"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/button_answer_5_string"
+                    android:layout_width="58dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape_primary"
+                    android:backgroundTint="#ECF5F8"
+                    android:text="(String[] args)"
+                    android:textAllCaps="false"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/button_answer_6_public"
+                    android:layout_width="58dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape_primary"
+                    android:backgroundTint="#ECF5F8"
+                    android:text="public"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_answer_7_static"
+                    android:layout_width="58dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape_primary"
+                    android:backgroundTint="#ECF5F8"
+                    android:text="static"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/button_answer_8_void"
+                    android:layout_width="58dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape_primary"
+                    android:backgroundTint="#ECF5F8"
+                    android:text="void"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/button_answer_9_helloworld"
+                    android:layout_width="58dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape_primary"
+                    android:backgroundTint="#ECF5F8"
+                    android:text="(&quot;hello world!&quot;);"
+                    android:textAllCaps="false"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="359dp"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCheckQuiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        app:layout_constraintVertical_bias="0.277">
+
+        <Button
+            android:id="@+id/button_back_all"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape_secondary"
+            android:text="모두 되돌리기" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

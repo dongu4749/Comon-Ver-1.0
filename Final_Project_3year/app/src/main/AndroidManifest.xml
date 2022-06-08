@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="se.jbnu.final_project_3year">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_main"
+        android:label="Comon"
+        android:roundIcon="@mipmap/ic_main_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".Quiz_Short_Answer_Activity3"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz_Short_Answer_Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz_Multiple_choice_Activity3"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz_Multiple_choice_Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz_Short_Answer_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz_Block_CodingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz_Multiple_choice_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CodingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Survey_Recommend"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Survey5"
+            android:exported="false" />
+        <activity
+            android:name=".Survey3"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Survey2"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Survey4"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Survey1"
+            android:exported="false" />
+    </application>
+
+</manifest>

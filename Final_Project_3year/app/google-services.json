@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "366072346093",
+    "project_id": "comon-5100c",
+    "storage_bucket": "comon-5100c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366072346093:android:d52c5937c992f0058423e4",
+        "android_client_info": {
+          "package_name": "se.jbnu.final_project_3year"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "366072346093-4it7nenpm4q3c5tgianvkgtj1ip5pih3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDod8Kpi87b7yHXca5oRaWoMz3wkeWNNtg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "366072346093-4it7nenpm4q3c5tgianvkgtj1ip5pih3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
