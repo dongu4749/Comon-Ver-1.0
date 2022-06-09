@@ -50,10 +50,10 @@
 
         <TextView
             android:id="@+id/textViewName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="91dp"
+            android:layout_height="37dp"
             android:layout_marginStart="200dp"
-            android:layout_marginTop="92dp"
+            android:layout_marginTop="72dp"
             android:text="개발자님"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -61,17 +61,17 @@
 
         <TextView
             android:id="@+id/textViewEmail"
-            android:layout_width="164dp"
-            android:layout_height="33dp"
+            android:layout_width="175dp"
+            android:layout_height="58dp"
             android:layout_marginTop="8dp"
             android:text="이메일주소"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.817"
+            app:layout_constraintHorizontal_bias="0.847"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewName"
-            app:layout_constraintVertical_bias="0.093" />
+            app:layout_constraintVertical_bias="0.108" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

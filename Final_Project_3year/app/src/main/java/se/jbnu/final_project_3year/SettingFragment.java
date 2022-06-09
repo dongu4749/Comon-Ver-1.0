@@ -43,9 +43,11 @@ public class SettingFragment extends PreferenceFragmentCompat {
         buttonAccountDelete.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             public boolean onPreferenceClick(Preference preference) {
                 //open browser or intent here
-                LoginActivity.AccountDelete();
-                Intent intent = new Intent(getActivity().getApplicationContext(), LoginActivity.class);
-                startActivity(intent);
+                LoginActivity loginActivity = new LoginActivity();
+                getActivity().finishAffinity();
+                loginActivity.AccountDelete();
+                System.runFinalization();
+                System.exit(0);
                 return true;
             }
         });

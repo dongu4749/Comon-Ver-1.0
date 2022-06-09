@@ -1,7 +1,10 @@
 package se.jbnu.final_project_3year;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AlertDialog;
@@ -13,6 +16,7 @@ import androidx.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -35,6 +39,7 @@ public class DailyKnowledgeFragment extends PreferenceFragmentCompat {
 
         Preference buttonDaily = (Preference) findPreference("DailyKnowledge");
 
+
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
         builder.setMessage("소프트웨어 공학은 인류의 이익을 위해서 소프트웨어와 관련된 원리, 지식, 도구등을 활용하여 새로운 제품, 도구등을 만드는 것이라고 볼 수 있는데, 더 학문적 개념으로 살펴보자면, 소프트웨어의 개발, 운용, 유지보수등의 생명 주기 전반을 체계적이고 서술적이며 정량적으로 다루는 학문이다.");
@@ -48,6 +53,7 @@ public class DailyKnowledgeFragment extends PreferenceFragmentCompat {
                 return true;
             }
         });
+       
     }
 
     SharedPreferences.OnSharedPreferenceChangeListener prefListener =
