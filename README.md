@@ -1,4 +1,4 @@
-Team : Mansa  
+Team : Mnsa  
 Leader : Joe_dongwoo  
 Team members : Yang_yewon, Go_seoyeon  
 Version : Beta  
